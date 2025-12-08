@@ -1,0 +1,6 @@
+[package]
+org = "duminduk"
+name = "hello_app"
+version = "1.0.0"
+distribution = "2201.12.7"
+
