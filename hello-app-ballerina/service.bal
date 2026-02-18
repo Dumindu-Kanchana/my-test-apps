@@ -1,5 +1,4 @@
 import ballerina/http;
-import ballerina/log;
 
 # A service representing a network-accessible API
 # bound to port `9090`.
