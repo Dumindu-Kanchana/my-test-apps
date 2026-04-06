@@ -1,9 +1,9 @@
-spec:
-  container:
-    image: ""
-  endpoints:
-    http:
-      port: 8090
-      type: HTTP
-      visibility:
+apiVersion: openchoreo.dev/v1alpha1
+metadata:
+  name: github-webhook-logger
+endpoints:
+  - name: http
+    port: 8090
+    type: HTTP
+    visibility:
       - external
