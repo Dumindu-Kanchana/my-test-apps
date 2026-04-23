@@ -6,13 +6,11 @@ builder.WebHost.UseUrls("http://0.0.0.0:8080");
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AllowIntrospection(true);
 
 var app = builder.Build();
 
-app.MapGraphQL("/").WithOptions(new HotChocolate.AspNetCore.GraphQLServerOptions
-{
-    EnableSchemaIntrospection = true
-});
+app.MapGraphQL("/");
 
 app.Run();
